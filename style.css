@@ -1,0 +1,63 @@
+body{
+    background-color: #111;
+    background-image: radial-gradient(#333 1px, transparent 1px);
+    background-size: 10px 10px;
+    padding: 75px;
+    margin: 25px;
+    color: aliceblue;
+}
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid #333;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.cell:hover{
+    background-color: #444;
+}
+
+.cell.x::before {
+    content: "X";
+    color: #f00;
+}
+
+.cell.o::before {
+    content: "O";
+    color: #f00;
+}
+
+#gameContainer{
+    font-family: "Pernament Marker", cursive;
+    text-align: center;
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+#restartBtn{
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#restartBtn:hover {
+    background-color: #fff;
+    color: #f00;
+    box-shadow: 0 0 0 2px #f00;
+}
