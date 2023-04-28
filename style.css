@@ -35,7 +35,7 @@ body {
 #gameContainer {
     font-family: "Pernament Marker", cursive;
     text-align: center;
-    background-color: #0c0c0c;
+    background-color: #1c1c1c;
     color: #fff;
 }
 
@@ -50,6 +50,7 @@ body {
     background-color: #f00;
     color: #fff;
     border: none;
+    border-radius: 5px;
     padding: 10px 20px;
     margin-top: 20px;
     font-weight: bold;
